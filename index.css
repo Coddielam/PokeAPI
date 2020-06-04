@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: rgba(0, 128, 96, 0.863);
+  display: flex;
+  /* horizontally align */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+input {
+  width: 30vw;
+  height: 5vh;
+  border-radius: 40px;
+  padding: 15px;
+  font-size: larger;
+  border: none;
+}
