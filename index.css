@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Press Start 2P", cursive;
+  font-size: small;
 }
 
 html {
@@ -13,6 +15,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  flex-direction: column;
+}
+
+form {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  display: flex;
 }
 
 input {
@@ -20,6 +30,57 @@ input {
   height: 5vh;
   border-radius: 40px;
   padding: 15px;
-  font-size: larger;
+  font-size: smaller;
   border: none;
+}
+
+button {
+  border-radius: 0px 30px 30px 0px;
+  border: none;
+  font-size: smaller;
+  color: whitesmoke;
+  background-color: rgba(48, 125, 250, 0.89);
+  cursor: pointer;
+}
+
+#pokemon-viewport {
+  height: 55vh;
+  width: 55vw;
+  background-color: rgba(221, 221, 221, 0.849);
+  border: solid 20px darkslategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 32px;
+}
+
+#pokeinfo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  /* text-align: center; */
+  height: 13vh;
+  align-items: center;
+  border: solid;
+  border-width: 0 2px;
+}
+
+#pokeinfo > div {
+  width: 50%;
+  background-color: beige;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border: solid;
+  border-width: 4px 2px;
+  justify-content: inherit;
+  padding: 10px;
+}
+
+img {
+  margin: auto;
 }
